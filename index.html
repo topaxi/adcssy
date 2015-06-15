@@ -44,9 +44,34 @@
           
             <li><a href="#adcssy">AdCSSy - Styleguide</a></li>
           
+            <li><a href="#colors">Colors</a></li>
+          
           </ul>
 <h1 id="adcssy" class="styleguide">AdCSSy - Styleguide</h1>
-<p class="styleguide">This is the <a class="styleguide" href="http://adfinis-sygroup.ch/" title="http://adfinis-sygroup.ch/">Adfinis SyGroup AG</a> CSS Framework Guide</p>        </section>
+<p class="styleguide">This is the <a class="styleguide" href="http://adfinis-sygroup.ch/" title="http://adfinis-sygroup.ch/">Adfinis SyGroup AG</a> CSS Framework Guide</p>
+<h1 id="colors" class="styleguide">Colors</h1>
+
+<div style="display:flex;justify-content:space-around;width:640px">
+  <div class="example-color background-color-primary"></div>
+  <div class="example-color background-color-secondary"></div>
+  <div class="example-color background-color-ternary"></div>
+</div>
+
+<div style="display:flex;justify-content:space-around;width:853px;margin-top:0.5rem">
+  <div class="example-color background-color-success"></div>
+  <div class="example-color background-color-info"></div>
+  <div class="example-color background-color-warning"></div>
+  <div class="example-color background-color-danger"></div>
+</div>
+
+<script>
+  ;[].slice.call(document.getElementsByClassName('example-color')).forEach(function(el) {
+    var style = window.getComputedStyle(el);
+
+    el.textContent = style.backgroundColor
+  })
+</script>
+        </section>
         <footer class="page-footer">
           <p>
             <small>This documentation was generated using <a href="http://github.com/trulia/hologram">Hologram</a></small>
