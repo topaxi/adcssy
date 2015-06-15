@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+  <head>
+    <title>AdCSSy Styleguide: Typography</title>
+    <link rel="stylesheet" href="build/css/adcssy.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="page">
+    <div class="page-viewport">
+      <nav class="nav-side">
+        <header class="nav-side-header">
+          <a href="index.html">
+            <div class="nav-side-header-logo"></div>
+            <div class="nav-side-header-title">AdCSSy Styleguide</div>
+          </a>
+        </header>
+        <section class="nav-side-body">
+          <ul class="nav-side-list">
+            <li class="nav-side-list-header">Categories</li>
+          
+            <li class="nav-side-list-item"><a href="form.html">Form</a></li>
+          
+            <li class="nav-side-list-item"><a href="typography.html">Typography</a></li>
+          
+            <li class="nav-side-list-item"><a href="grid.html">Grid</a></li>
+          
+            <li class="nav-side-list-item"><a href="index.html">Basics</a></li>
+          
+            <li class="nav-side-list-item"><a href="components.html">Components</a></li>
+          
+            <li class="nav-side-list-item"><a href="table.html">Table</a></li>
+          
+          </ul>
+        </section>
+      </nav>
+
+      <main class="page-content">
+        <section>
+          <div class="h1">Overview</div>
+          <ul>
+          
+            <li><a href="#content">Content</a></li>
+          
+            <li><a href="#headings">Headings</a></li>
+          
+          </ul>
+<h1 id="content" class="styleguide">Content</h1>
+<p class="styleguide">Content which should respect typesettings should be wrapped in a <code class="styleguide">typeset</code> class:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <article>
+  <header>
+    <h1>My Article</h1>
+  </header>
+  <section class="typeset">
+    <p class="lead">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    </p>
+    <p>
+      Curabitur ullamcorper velit et nisl fermentum <a href="#">molestie</a>. Maecenas justo orci, rutrum et vestibulum at, consectetur id ex. Aliquam erat volutpat. Mauris eleifend sed odio eu lacinia. Donec non dolor tempus, finibus velit vel, <a href="#">consequat justo</a>. Mauris at nisl metus. Donec sit amet lacus tincidunt, pulvinar velit sollicitudin, lacinia urna. Praesent nisi dolor, mollis convallis pellentesque non, blandit quis ligula. Nam sed purus lacinia, blandit felis et, vehicula nisi. Donec consequat augue est, mattis fringilla ipsum facilisis eget.
+    </p>
+    <blockquote>
+      <p>
+        Light thinks it travels faster than anything but it is wrong. No matter how fast light travels, it finds the darkness has always got there first, and is waiting for it.
+      </p>
+      &mdash; <a href="https://en.wikipedia.org/wiki/Terry_Pratchett">Terry Pratchett</a>
+    </blockquote>
+    <p>
+      Integer est velit, condimentum id urna quis, placerat molestie diam. Quisque tempus, augue in laoreet tempus, turpis nibh <a href="#">placerat elit</a>, et malesuada augue lectus sed augue. Etiam vel sem nec mi accumsan rutrum. Nullam sed egestas sem. Nam pulvinar tortor a purus fringilla, eu posuere tortor porttitor. Nulla sit amet magna porttitor, lobortis urna a, hendrerit nulla. Sed sed dictum augue, et facilisis risus. Quisque sed sem sodales, consequat tellus id, mattis nulla. Proin quis hendrerit nisi, eget mollis tellus. Sed dapibus elementum ex vel mollis.
+    </p>
+    <pre><code>.css-example {
+  color: red;
+  background: url(/foo/bar.jpg);
+}</code></pre>
+    <p>
+      Curabitur ullamcorper velit et nisl fermentum <a href="#">molestie</a>. Maecenas justo orci, rutrum et vestibulum at, consectetur id ex. Aliquam erat volutpat. Mauris eleifend sed odio eu lacinia. Donec non dolor tempus, finibus velit vel, <a href="#">consequat justo</a>. Mauris at nisl metus. Donec sit amet lacus tincidunt, pulvinar velit sollicitudin, lacinia urna. Praesent nisi dolor, mollis convallis pellentesque non, blandit quis ligula. Nam sed purus lacinia, blandit felis et, vehicula nisi. Donec consequat augue est, mattis fringilla ipsum facilisis eget.
+    </p>
+  </section>
+</article>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><code><span class="nt">&lt;article&gt;</span>
+  <span class="nt">&lt;header&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>My Article<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;/header&gt;</span>
+  <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"typeset"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"lead"</span><span class="nt">&gt;</span>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p&gt;</span>
+      Curabitur ullamcorper velit et nisl fermentum <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>molestie<span class="nt">&lt;/a&gt;</span>. Maecenas justo orci, rutrum et vestibulum at, consectetur id ex. Aliquam erat volutpat. Mauris eleifend sed odio eu lacinia. Donec non dolor tempus, finibus velit vel, <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>consequat justo<span class="nt">&lt;/a&gt;</span>. Mauris at nisl metus. Donec sit amet lacus tincidunt, pulvinar velit sollicitudin, lacinia urna. Praesent nisi dolor, mollis convallis pellentesque non, blandit quis ligula. Nam sed purus lacinia, blandit felis et, vehicula nisi. Donec consequat augue est, mattis fringilla ipsum facilisis eget.
+    <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;blockquote&gt;</span>
+      <span class="nt">&lt;p&gt;</span>
+        Light thinks it travels faster than anything but it is wrong. No matter how fast light travels, it finds the darkness has always got there first, and is waiting for it.
+      <span class="nt">&lt;/p&gt;</span>
+      <span class="ni">&amp;mdash;</span> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://en.wikipedia.org/wiki/Terry_Pratchett"</span><span class="nt">&gt;</span>Terry Pratchett<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/blockquote&gt;</span>
+    <span class="nt">&lt;p&gt;</span>
+      Integer est velit, condimentum id urna quis, placerat molestie diam. Quisque tempus, augue in laoreet tempus, turpis nibh <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>placerat elit<span class="nt">&lt;/a&gt;</span>, et malesuada augue lectus sed augue. Etiam vel sem nec mi accumsan rutrum. Nullam sed egestas sem. Nam pulvinar tortor a purus fringilla, eu posuere tortor porttitor. Nulla sit amet magna porttitor, lobortis urna a, hendrerit nulla. Sed sed dictum augue, et facilisis risus. Quisque sed sem sodales, consequat tellus id, mattis nulla. Proin quis hendrerit nisi, eget mollis tellus. Sed dapibus elementum ex vel mollis.
+    <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;pre&gt;&lt;code&gt;</span>.css-example {
+  color: red;
+  background: url(/foo/bar.jpg);
+}<span class="nt">&lt;/code&gt;&lt;/pre&gt;</span>
+    <span class="nt">&lt;p&gt;</span>
+      Curabitur ullamcorper velit et nisl fermentum <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>molestie<span class="nt">&lt;/a&gt;</span>. Maecenas justo orci, rutrum et vestibulum at, consectetur id ex. Aliquam erat volutpat. Mauris eleifend sed odio eu lacinia. Donec non dolor tempus, finibus velit vel, <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>consequat justo<span class="nt">&lt;/a&gt;</span>. Mauris at nisl metus. Donec sit amet lacus tincidunt, pulvinar velit sollicitudin, lacinia urna. Praesent nisi dolor, mollis convallis pellentesque non, blandit quis ligula. Nam sed purus lacinia, blandit felis et, vehicula nisi. Donec consequat augue est, mattis fringilla ipsum facilisis eget.
+    <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/section&gt;</span>
+<span class="nt">&lt;/article&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="headings" class="styleguide">Headings</h1>
+<p class="styleguide">Headings:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <section>
+  <h1>Foobar</h1>
+  <h2>Foobar</h2>
+  <h3>Foobar</h3>
+  <h4>Foobar</h4>
+  <h5>Foobar</h5>
+  <h6>Foobar</h6>
+</section>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><code><span class="nt">&lt;section&gt;</span>
+  <span class="nt">&lt;h1&gt;</span>Foobar<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;h2&gt;</span>Foobar<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;h3&gt;</span>Foobar<span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;h4&gt;</span>Foobar<span class="nt">&lt;/h4&gt;</span>
+  <span class="nt">&lt;h5&gt;</span>Foobar<span class="nt">&lt;/h5&gt;</span>
+  <span class="nt">&lt;h6&gt;</span>Foobar<span class="nt">&lt;/h6&gt;</span>
+<span class="nt">&lt;/section&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+<p class="styleguide">Counting Headings:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <div class="typeset">
+  <h1 class="h1-counter">Foobar</h1>
+  <h2 class="h2-counter">Foobar</h2>
+  <h2 class="h2-counter">Foobar</h2>
+  <h2 class="h2-counter">Foobar</h2>
+  <h3 class="h3-counter">Foobar</h3>
+  <h3 class="h3-counter">Foobar</h3>
+  <h4 class="h4-counter">Foobar</h4>
+  <h5 class="h5-counter">Foobar</h5>
+
+  <h1 class="h1-counter">Foobar</h1>
+  <h2 class="h2-counter">Foobar</h2>
+  <h4 class="h4-counter">Foobar</h4>
+  <h5 class="h5-counter">Foobar</h5>
+  <h6 class="h6-counter">Foobar</h6>
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"typeset"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"h1-counter"</span><span class="nt">&gt;</span>Foobar<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"h2-counter"</span><span class="nt">&gt;</span>Foobar<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"h2-counter"</span><span class="nt">&gt;</span>Foobar<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"h2-counter"</span><span class="nt">&gt;</span>Foobar<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"h3-counter"</span><span class="nt">&gt;</span>Foobar<span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"h3-counter"</span><span class="nt">&gt;</span>Foobar<span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"h4-counter"</span><span class="nt">&gt;</span>Foobar<span class="nt">&lt;/h4&gt;</span>
+  <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"h5-counter"</span><span class="nt">&gt;</span>Foobar<span class="nt">&lt;/h5&gt;</span>
+
+  <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"h1-counter"</span><span class="nt">&gt;</span>Foobar<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"h2-counter"</span><span class="nt">&gt;</span>Foobar<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"h4-counter"</span><span class="nt">&gt;</span>Foobar<span class="nt">&lt;/h4&gt;</span>
+  <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"h5-counter"</span><span class="nt">&gt;</span>Foobar<span class="nt">&lt;/h5&gt;</span>
+  <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"h6-counter"</span><span class="nt">&gt;</span>Foobar<span class="nt">&lt;/h6&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+        </section>
+        <footer>
+          <p>This documentation generated using <a href="http://github.com/trulia/hologram">Hologram</a>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
