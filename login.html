@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>AdCSSy Styleguide: </title>
+    <title>AdCSSy Styleguide: Login</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="build/css/adcssy.css">
     <link rel="stylesheet" href="css/style.css">
@@ -89,50 +89,56 @@
           <div class="grid grid-sm--5">
             <div class="grid-cell btn-group btn-group--vertical" style="margin-bottom: 1em">
             
-              <a class="btn" href="#adcssy">AdCSSy - Styleguide</a>
-            
-              <a class="btn" href="#colors">Colors</a>
+              <a class="btn" href="#login">Login Page</a>
             
             </div>
           </div>
-<h1 id="adcssy" class="styleguide">AdCSSy - Styleguide</h1>
-<p class="styleguide">This is the <a class="styleguide" href="http://adfinis-sygroup.ch/" title="http://adfinis-sygroup.ch/">Adfinis SyGroup AG</a> CSS Framework Guide</p>
-<h1 id="colors" class="styleguide">Colors</h1>
-
-<div class="grid example-color-grid">
-  <div class="grid-cell grid-cell--4">
-    <div class="example-color background-color-primary"></div>
-  </div>
-  <div class="grid-cell grid-cell--4">
-    <div class="example-color background-color-secondary"></div>
-  </div>
-  <div class="grid-cell grid-cell--4">
-    <div class="example-color background-color-tertiary"></div>
-  </div>
-</div>
-
-<div class="grid example-color-grid">
-  <div class="grid-cell grid-cell--4">
-    <div class="example-color background-color-success"></div>
-  </div>
-  <div class="grid-cell grid-cell--4">
-    <div class="example-color background-color-info"></div>
-  </div>
-  <div class="grid-cell grid-cell--4">
-    <div class="example-color background-color-warning"></div>
-  </div>
-  <div class="grid-cell grid-cell--4">
-    <div class="example-color background-color-danger"></div>
+<h1 id="login" class="styleguide">Login Page</h1>
+<p class="styleguide">Example login page:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <div class="page page-login">
+  <div class="page-viewport">
+    <main class="page-content">
+      <div class="login-form">
+        <form class="form-inline">
+          <div class="form-group login-form-email">
+            <input type="email" class="form-control" placeholder="Email Address">
+          </div>
+          <div class="form-group login-form-password">
+            <input type="password" class="form-control" placeholder="Password">
+          </div>
+          <button type="submit" class="btn btn-primary">Sign in</button>
+          <button class="login-form-password-reset btn btn-link">Forgot password?</button>
+        </form>
+      </div>
+    </main>
   </div>
 </div>
 
-<script>
-  ;[].slice.call(document.getElementsByClassName('example-color')).forEach(function(el) {
-    var style = window.getComputedStyle(el);
-
-    el.textContent = style.backgroundColor
-  })
-</script>
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"page page-login"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"page-viewport"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;main</span> <span class="na">class=</span><span class="s">"page-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"login-form"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-inline"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group login-form-email"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Email Address"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group login-form-password"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Password"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Sign in<span class="nt">&lt;/button&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"login-form-password-reset btn btn-link"</span><span class="nt">&gt;</span>Forgot password?<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;/form&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/main&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
         </section>
         <footer class="page-footer">
           <p>
