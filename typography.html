@@ -15,7 +15,7 @@
           <button class="nav-toggle nav-side-toggle" onclick="this.parentNode.parentNode.classList.toggle('nav-side--expand')"></button>
           <a href="index.html">
             <div class="nav-side-header-logo"></div>
-            <div class="nav-side-header-title">AdCSSy Styleguide</div>
+            <div class="nav-side-header-title">AdCSSy<br>Styleguide</div>
           </a>
         </header>
         <section class="nav-side-body">
@@ -81,20 +81,31 @@
           
           </ul>
         </section>
+        <footer class="nav-side-footer">
+          <button class="nav-hide btn" type="button" title="Toggle navigation" onclick="
+            this.parentNode.parentNode.classList.toggle('nav-side--autohide')
+            this.firstChild.classList.toggle('fa-chevron-left')
+            this.firstChild.classList.toggle('fa-chevron-right')
+          "><i class="fa fa-chevron-left"></i></button>
+        </footer>
       </nav>
 
-      <main class="page-content page-content--scroll">
-        <section class="page-main">
-          <div class="h1">Overview</div>
-          <div class="grid grid-sm--5">
-            <div class="grid-cell btn-group btn-group--vertical" style="margin-bottom: 1em">
+      <main class="page-main">
+        <nav class="nav-side nav-side--sub">
+          <ul class="nav-side-list">
             
-              <a class="btn" href="#content">Content</a>
+              <li class="nav-side-list-item">
+                <a href="#content">Content</a>
+              </li>
             
-              <a class="btn" href="#headings">Headings</a>
+              <li class="nav-side-list-item">
+                <a href="#headings">Headings</a>
+              </li>
             
-            </div>
-          </div>
+          </ul>
+        </nav>
+        <section class="page-content page-content--scroll">
+          <section class="page-content-main">
 <h1 id="content" class="styleguide">Content</h1>
 <p class="styleguide">Content which should respect typesettings should be wrapped in a <code class="styleguide">typeset</code> class:</p><div class="codeExample">
   <div class="exampleOutput">
@@ -263,12 +274,13 @@
     </div>
   </div>
 </div>
+          </section>
+          <footer class="page-footer">
+            <p>
+              <small>This documentation was generated using <a href="http://github.com/trulia/hologram">Hologram</a></small>
+            </p>
+          </footer>
         </section>
-        <footer class="page-footer">
-          <p>
-            <small>This documentation was generated using <a href="http://github.com/trulia/hologram">Hologram</a></small>
-          </p>
-        </footer>
       </main>
       <div class="page-content-overlay" onclick="this.previousElementSibling.previousElementSibling.classList.toggle('nav-side--expand')"></div>
     </div>
