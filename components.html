@@ -102,6 +102,10 @@
               </li>
             
               <li class="nav-side-list-item">
+                <a href="#breadcrumb">Breadcrumb</a>
+              </li>
+            
+              <li class="nav-side-list-item">
                 <a href="#nav-side">Sidebar Navigation</a>
               </li>
             
@@ -153,6 +157,50 @@
   <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"alert"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
   Success!
 <span class="nt">&lt;/div&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="breadcrumb" class="styleguide">Breadcrumb</h1>
+<p class="styleguide">Basic usage:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <ol class="breadcrumb">
+  <li><a href="#/manage">Manage</a></li>
+  <li><a href="#/manage/hosts">Hosts</a></li>
+  <li><a href="#/manage/hosts/1">topaxi.ch</a></li>
+  <li><a href="#/manage/hosts/1/services">Services</a></li>
+</ol>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#/manage"</span><span class="nt">&gt;</span>Manage<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#/manage/hosts"</span><span class="nt">&gt;</span>Hosts<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#/manage/hosts/1"</span><span class="nt">&gt;</span>topaxi.ch<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#/manage/hosts/1/services"</span><span class="nt">&gt;</span>Services<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+<p class="styleguide">Hide the first menu point on non-mobile devices:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <ol class="breadcrumb breadcrumb--first-mobileonly">
+  <li><a href="#/manage">Manage</a></li>
+  <li><a href="#/manage/hosts">Hosts</a></li>
+  <li><a href="#/manage/hosts/1">topaxi.ch</a></li>
+  <li><a href="#/manage/hosts/1/services">Services</a></li>
+</ol>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"breadcrumb breadcrumb--first-mobileonly"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#/manage"</span><span class="nt">&gt;</span>Manage<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#/manage/hosts"</span><span class="nt">&gt;</span>Hosts<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#/manage/hosts/1"</span><span class="nt">&gt;</span>topaxi.ch<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#/manage/hosts/1/services"</span><span class="nt">&gt;</span>Services<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span></code></pre>
     </div>
   </div>
 </div>
