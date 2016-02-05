@@ -3465,6 +3465,7 @@ Modifiers:
           flex-direction: row;
   position: relative;
   overflow: hidden;
+  width: 100vw;
 }
 
 .page-viewport--column,
@@ -3500,9 +3501,9 @@ Modifiers:
   display: flex;
   background: #fff;
   -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -webkit-flex: 1 1 100vw;
+      -ms-flex: 1 1 100vw;
+          flex: 1 1 100vw;
 }
 
 .page-content--scroll,
